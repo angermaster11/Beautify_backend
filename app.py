@@ -57,7 +57,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import os
 import cv2
-
+cv2.ocl.setUseOpenCL(False) 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
